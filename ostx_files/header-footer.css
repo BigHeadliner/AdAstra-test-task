@@ -9,7 +9,7 @@
     padding: 0 15px;
     z-index: 999;
     background-color: #fff; 
-    border: 1px solid green; 
+    border: 1px solid transparent; 
     box-shadow: 0 0 10px 5px rgb(0 0 0/5%);
 } 
  
@@ -17,7 +17,7 @@
     width: 100%; 
     max-width: 1152px; 
     margin: 0 auto; 
-    border: 1px solid yellow;
+    border: 1px solid transparent;
 }  
  
 .header__top{ 
@@ -36,7 +36,7 @@
     padding: 0;
     background-color: transparent;
     transition: all 0.25s; 
-    border: 1px solid rebeccapurple;
+    border: 1px solid transparent;
 }
 
 .row-top,
@@ -71,12 +71,12 @@
     }
 
     .row-bottom {
-        transform: rotate(-45deg) translateY(6px) translateX(-7px);
+        transform: rotate(-45deg) translateY(5px) translateX(-7px);
     }
 }  
  
 .header__logo{ 
-    border: 1px solid fuchsia; 
+    border: 1px solid transparent; 
     position: relative; 
     max-width: 285px; 
     height: 70px; 
@@ -85,6 +85,11 @@
     justify-content: space-between; 
     overflow: hidden;
 }  
+ 
+.header__logo-img{ 
+    width: 160px; 
+    height: 30px;
+}
  
 .header__brand{ 
    width: 78px; 
@@ -99,7 +104,7 @@
 }
   
 .header__user-nav{ 
-    border: 1px solid salmon;  
+    border: 1px solid transparent;  
     width: 100%; 
     max-width: 107px; 
     display: flex; 
@@ -115,7 +120,7 @@
 .header__live-wrapper{  
     position: relative;
     height: 14px; 
-    border: 1px solid green; 
+    border: 1px solid transparent; 
     font-size: 9px; 
     font-weight: 800; 
 } 
@@ -141,9 +146,27 @@
   }
   
 .menu{
-    display: block; 
-    background-color: #f4f4f4;
-} 
+    background-color: #f4f4f4; 
+    padding: 15px;
+}   
+ 
+.menu__list{ 
+    margin: 0;
+}
+ 
+.menu__list-item{ 
+    padding: 0 25px; 
+    border-left: solid 3px #ef1f1f; 
+  
+}  
+ 
+.menu__list-item + .menu__list-item{ 
+    margin-top: 15px;
+}
+ 
+.menu__list-link{ 
+    color: #000;
+}
  
  
   
@@ -155,4 +178,46 @@
     z-index: 1000; 
     position: relative;
 }
+   
  
+/* RESPONSIVE */ 
+ 
+@media(max-width:1097px){ 
+      
+    /* header  */
+
+    .header__user-nav {
+        max-width: 83px; 
+    }
+}  
+
+ 
+@media(max-width:777px){   
+     
+       /* header  */
+
+       .header__user-nav {
+        max-width: 70px; 
+    }
+
+} 
+ 
+@media(max-width:470px){   
+     
+    /* header  */
+
+    .header__logo-img {
+        width: 109px; 
+    }
+
+} 
+ 
+@media(max-width:450px){   
+     
+    /* header  */
+
+    .elite-title {
+        margin-top: 97px;
+    }
+
+}
