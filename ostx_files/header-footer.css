@@ -61,9 +61,9 @@
 }
 
 .menu__btn--open { 
-
+     
     .row-top {
-        transform: rotate(45deg) translateY(10px) translateX(10px);
+        transform: rotate(45deg) translateY(7px) translateX(5px);
     }
 
     .row-middle {
@@ -71,7 +71,7 @@
     }
 
     .row-bottom {
-        transform: rotate(-45deg) translateY(10px) translateX(-10px);
+        transform: rotate(-45deg) translateY(6px) translateX(-7px);
     }
 }  
  
@@ -149,4 +149,10 @@
   
 .elite-title{ 
     margin-top: 107px;
+}  
+ 
+.order_form-wrapper{
+    z-index: 1000; 
+    position: relative;
 }
+ 
