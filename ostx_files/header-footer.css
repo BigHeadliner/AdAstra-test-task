@@ -17,7 +17,7 @@
     width: 100%;
     max-width: 1152px;
     margin: 0 auto;
-    border: 1px solid green;
+    border: 1px solid transparent;
 }
 
 .header__top {
@@ -199,12 +199,13 @@
     width: 100%;
     max-width: 1352px;
     margin: 0 auto;
-    border: 1px solid green;
+    border: 1px solid transparent; 
+    padding: 0 10px;
 }
   
 .footer__inner{ 
     padding: 30px 15px; 
-    border: 1px solid fuchsia;
+    border: 1px solid transparent;
 }  
  
 .footer__logo{ 
@@ -218,7 +219,7 @@
 } 
  
 .footer__links-item{ 
-    border: 1px solid darkmagenta; 
+    border: 1px solid transparent; 
     width: fit-content; 
     position: relative;
 } 
@@ -252,7 +253,7 @@
  
 .footer__links-box--1{  
     max-width: 870px; 
-    border: 1px solid salmon; 
+    border: 1px solid transparent; 
 }  
  
 .footer__links-box--2{ 
@@ -260,7 +261,7 @@
 }
  
 .footer__links-box--3{  
-    border: 1px solid salmon;     
+    border: 1px solid transparent;     
     max-width: 130px;  
 } 
  
@@ -283,7 +284,7 @@
  }   
   
  .footer__social{ 
-   border: 1px solid green; 
+   border: 1px solid transparent; 
    display: flex; 
    justify-content: space-between; 
    max-width: 250px; 
@@ -325,11 +326,11 @@
  }  
   
  .footer__download{ 
-    border: 1px solid gold; 
+    border: 1px solid transparent; 
     max-width: 540px; 
     display: flex;  
     justify-content: space-between; 
-    margin: 0 auto 30px;
+    margin: 0 auto 15px;
  } 
   
  .footer__download-link{ 
@@ -361,6 +362,31 @@
     .header__user-nav {
         max-width: 83px;
     }
+} 
+ 
+@media(max-width:930px) {  
+     
+  .footer__links-box{ 
+   flex-direction: column; 
+   align-items:center;
+  }     
+   
+  .footer__links-box {
+    margin: 0 auto;
+   } 
+    
+   .footer__links-link::after{ 
+    display: none;
+   }
+   
+  .footer__links-item{ 
+    margin-bottom: 16px;
+  } 
+   
+  .footer__links-box.footer__links-box--5{ 
+    margin-bottom: 14px;
+  }
+
 }
 
 
@@ -371,6 +397,21 @@
     .header__user-nav {
         max-width: 70px;
     }
+
+} 
+ 
+@media(max-width:615px) {  
+     
+    /* footer */
+  
+   .footer__download{ 
+     flex-wrap: wrap;   
+     justify-content: center;
+   }   
+    
+   .footer__download-link{ 
+    margin: 7px;
+   }
 
 }
 
@@ -390,6 +431,23 @@
 
     .elite-title {
         margin-top: 97px;
+    }
+
+}  
+ 
+@media(max-width:423px) { 
+     
+    .footer__text {
+        margin-bottom: 23px; 
+    }
+}
+ 
+@media(max-width:390px) {  
+     
+    /* footer */ 
+      
+    .footer__download {
+        margin: 0 auto;
     }
 
 }
