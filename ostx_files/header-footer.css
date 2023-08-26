@@ -155,11 +155,13 @@
 
 .menu {
     background-color: #f4f4f4;
-    padding: 15px;
+    padding: 15px; 
 }
 
 .menu__list {
-    margin: 0;
+    margin: 0; 
+    max-height: 835px;
+    overflow-y: auto;
 }
 
 .menu__list-item {
